@@ -31,7 +31,7 @@ jobs:
         uses: actions/github-script@v6
         if: ${{ inputs.override-packages }}
         with:
-          script: return '[" ${{ inputs.override-packages }} "]'
+          script: return ["${{ inputs.override-packages }}"]
 
   lint-test-build:
     needs: evaluate-changed-packages
