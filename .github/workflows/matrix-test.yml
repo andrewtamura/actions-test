@@ -6,7 +6,7 @@ on:
       override-packages:
         description: "Override changed packages with this filter (use * to run all packages)"
         required: false
-	default: "*"
+	default: *
         type: string
 
 jobs:
